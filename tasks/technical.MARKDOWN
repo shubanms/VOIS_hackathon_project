@@ -39,17 +39,17 @@ The first layer is the input layer, it picks up the input signals and passes the
 The next layer does all kinds of calculations and feature extractions—it’s called the hidden layer.
 Often, there will be more than one hidden layer. And finally, there’s an output layer, which delivers the final result.
 
-<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/layers-of-a-neural-network-1.jpg" width = "400" height = "400" >
+<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/layers-of-a-neural-network-1.jpg" width = "600" height = "400" >
 
 Let’s take the real-life example of how traffic cameras identify license plates and speeding vehicles on the road. The picture itself is 28 by 28 pixels, and the image is fed as an input to identify the license plate. Each neuron has a number, called activation, which represents the grayscale value of the corresponding pixel, ranging from 0 to 1—it’s 1 for a white pixel and 0 for a black pixel. Each neuron is lit up when its activation is close to 1.
 
 Pixels in the form of arrays are fed into the input layer. If your image is bigger than 28 by 28 pixels, you must shrink it down, because you can’t change the size of the input layer. In our example, we’ll name the inputs as X1, X2, and X3. Each of those represents one of the pixels coming in. The input layer then passes the input to the hidden layer. The interconnections are assigned weights at random. The weights are multiplied with the input signal, and a bias is added to all of them.
 
-<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/slide-34-how-does-a-neural-network-work-1.jpg" width = "400" height = "400" >
+<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/slide-34-how-does-a-neural-network-work-1.jpg" width = "600" height = "400" >
 
 The weighted sum of the inputs is fed as input to the activation function, to decide which nodes to fire for feature extraction. As the signal flows within the hidden layers, the weighted sum of inputs is calculated and is fed to the activation function in each layer to decide which nodes to fire.
 
-<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/2-how-does-a-neural-network-work-1.jpg" width = "400" height = "400" >
+<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/2-how-does-a-neural-network-work-1.jpg" width = "600" height = "400" >
 
 # Types of activation functions
 
