@@ -53,5 +53,44 @@ The weighted sum of the inputs is fed as input to the activation function, to de
 
 # Types of activation functions
 
+## 1. Sigmoid Function
+
+The sigmoid function is used when the model is predicting probability.
+
+<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/sigmoid-function-neural-networks.jpg" width = "600" height = "400" >
+
+## 2. Threshold Function
+
+The threshold function is used when you don’t want to worry about the uncertainty in the middle.
+
+<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/the-threshold-function-1.jpg" width = "600" height = "400" >
+
+## 3. ReLU (rectified linear unit) Function
+
+The ReLU (rectified linear unit) function gives the value but says if it’s over 1, then it will just be 1, and if it’s less than 0, it will just be 0. The ReLU function is most commonly used these days.
+
+<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/relu-function-neural-networks.jpg" width = "600" height = "400" >
+
+## 4. Hyperbolic Tangent Function
+
+The hyperbolic tangent function is similar to the sigmoid function but has a range of -1 to 1.
+
+<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/hyperbolic-tangent-function-1.jpg" width = "600" height = "400" >
 
 
+Finally, the model will predict the outcome, applying a suitable application function to the output layer. In our example with the car image, optical character recognition (OCR) is used to convert it into text to identify what’s written on the license plate. In our neural network example, we show only three dots coming in, eight hidden layer nodes, and one output, but there’s really a huge amount of input and output.
+
+<img src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/3-how-does-a-neural-network-work-2.jpg" width = "600" height = "400" >
+
+Error in the output is back-propagated through the network and weights are adjusted to minimize the error rate. This is calculated by a cost function. You keep adjusting the weights until they fit all the different training models you put in.
+
+The output is then compared with the original result, and multiple iterations are done for maximum accuracy. With every iteration, the weight at every interconnection is adjusted based on the error. That math gets complicated, so we’re not going to dive into it here. But, we would look at how it’s being done while executing the code for our use case.
+
+In this project we use a ReLU function to detect images in our neural network.
+
+We have a weights file with all the specified weight's and perform convolution on the image details
+before we move on to the next layer.
+
+In this type, the input features are taken in batches—as if they pass through a filter. This allows the network to remember an image in parts. Applications include signal and image processing, such as facial recognition.
+
+This project is done in python specifically Jupyter notebooks using python modules such as NumPy, MatPlotLib and pyplot, CV2
