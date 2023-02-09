@@ -1,11 +1,13 @@
 {
     "cSpell.words": [
+        "grayscale",
         "imread",
         "imshow",
         "imwrite",
         "keras",
         "matplotlib",
         "pyplot",
+        "Siri",
         "sklearn"
     ]
 }
